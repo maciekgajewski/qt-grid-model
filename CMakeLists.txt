@@ -10,4 +10,5 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt5Widgets REQUIRED)
 
-add_subdirectory(modeltest)
+add_subdirectory(examples)
+add_subdirectory(experiments)

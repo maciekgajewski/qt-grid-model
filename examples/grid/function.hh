@@ -5,7 +5,7 @@
 
 namespace QtBinder { namespace Examples { namespace Grid {
 
-// Example "active" objkect, object with changing and modifiable state, whihc wil be displayed in the grid.
+// Example "active" object, object with changing and modifiable state, whihc wil be displayed in the grid.
 // The function it's a simple, 3-step harmonic, just ot have some values and nice-looking graph
 class Function
 {
@@ -46,7 +46,7 @@ private:
 
 	// params
 
-	double mW = 1.0; // base pulsation
+	double mW = 1.0; // base angular freq
 
 	// 1st harmonic
 	double mA1 = 10.0; // amplitude

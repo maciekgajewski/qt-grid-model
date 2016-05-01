@@ -10,6 +10,6 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt5Widgets REQUIRED)
 
-add_subdirectory(qt-binder)
+add_subdirectory(qt-grid-model)
 add_subdirectory(examples)
 add_subdirectory(experiments)

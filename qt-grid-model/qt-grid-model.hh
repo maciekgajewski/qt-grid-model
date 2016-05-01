@@ -8,7 +8,7 @@
 #include <memory>
 #include <stdexcept>
 
-namespace QtBinder {
+namespace QtGridModel {
 
 using Record = QVariant;
 

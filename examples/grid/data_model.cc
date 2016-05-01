@@ -3,7 +3,7 @@
 
 #include "function.hh"
 
-namespace QtBinder { namespace Examples { namespace Grid {
+namespace QtGridModel { namespace Examples { namespace Grid {
 
 using FunctionPtr = Function*;
 
@@ -32,4 +32,4 @@ QSharedPointer<RecordType> InitFunctionRecordType()
 }}}
 
 
-Q_DECLARE_METATYPE(QtBinder::Examples::Grid::FunctionPtr)
+Q_DECLARE_METATYPE(QtGridModel::Examples::Grid::FunctionPtr)

@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace QtBinder { namespace Examples { namespace Grid {
+namespace QtGridModel { namespace Examples { namespace Grid {
 
 // Example "active" object, object with changing and modifiable state, whihc wil be displayed in the grid.
 // The function it's a simple, 3-step harmonic, just ot have some values and nice-looking graph

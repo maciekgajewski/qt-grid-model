@@ -5,7 +5,7 @@
 #include <cmath>
 #include <random>
 
-namespace QtBinder { namespace Examples { namespace Grid {
+namespace QtGridModel { namespace Examples { namespace Grid {
 
 void Function::InitWithRandomParams()
 {

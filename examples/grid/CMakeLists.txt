@@ -7,7 +7,7 @@ add_executable(grid_example
 
 target_link_libraries(grid_example
 
-	qt-binder
+	qt-grid-model
 
 	Qt5::Widgets
 )

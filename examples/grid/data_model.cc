@@ -5,23 +5,29 @@
 
 namespace QtGridModel { namespace Examples { namespace Grid {
 
-using FunctionPtr = Function*;
-
 class AngularFreqField final : public Field
 {
 public:
 	AngularFreqField() : Field("Angular frequency") {}
 
-	QString asString(const Record& record) const override
+	QVariant gridData(RecordPtr recordPtr, int role) const override
 	{
-		FunctionPtr p = record.value<FunctionPtr>();
-		return QString::number(p->GetW());
+		const Function* p = recordPtr.as<Function>();
+		if (role == Qt::DisplayRole)
+		{
+			return QString::number(p->GetW());
+		}
+
+		return {};
 	}
+
 };
 
 
 QSharedPointer<RecordType> InitFunctionRecordType()
 {
+	qRegisterMetaType<QtGridModel::Examples::Grid::Function>();
+
 	QSharedPointer<RecordType> record(new RecordType("3 step harmonic"));
 
 	record->addField(new AngularFreqField);
@@ -32,4 +38,3 @@ QSharedPointer<RecordType> InitFunctionRecordType()
 }}}
 
 
-Q_DECLARE_METATYPE(QtGridModel::Examples::Grid::FunctionPtr)

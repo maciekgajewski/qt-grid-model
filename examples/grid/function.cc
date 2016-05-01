@@ -9,7 +9,7 @@ namespace QtGridModel { namespace Examples { namespace Grid {
 
 void Function::InitWithRandomParams()
 {
-	std::default_random_engine engine;
+	static std::default_random_engine engine;
 
 	std::normal_distribution<double> amplitudeDistr(6, 2);
 	std::normal_distribution<double> freqDistribution(10, 5);
